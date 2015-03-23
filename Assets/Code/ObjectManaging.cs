@@ -8,6 +8,7 @@ public class ObjectManaging : MonoBehaviour
 
     public int points = 0;
 
+    bool init_first = false;
     GameObject first_block;
     public List<Vector2> First_block_positions = new List<Vector2>(); 
 
@@ -19,9 +20,10 @@ public class ObjectManaging : MonoBehaviour
         first_block = GameObject.Find("block");
         First_block_positions.Add(first_block.transform.position);
         text_points.text = points.ToString();
+        //AddBlock();
         //Instantiate(first_block).name = "block_0";
         //AllObjects.Add(GameObject.Find("block_0"));
-        AddBlock();
+        
         
         
     }
@@ -30,6 +32,11 @@ public class ObjectManaging : MonoBehaviour
     {
         points++;
         text_points.text = points.ToString();
+        if (!init_first)
+        {
+            AddBlock();
+            init_first = true;
+        }
         AddBlock();
     }
 
@@ -71,6 +78,11 @@ public class ObjectManaging : MonoBehaviour
         {
             Instantiate(first_block).name = "block_0";
             AllObjects.Add(GameObject.Find("block_0"));
+
+            var renderer = (SpriteRenderer)AllObjects[0].GetComponent("SpriteRenderer");
+            renderer.sprite = Resources.LoadAssetAtPath<Sprite>("Assets/Sprites/snake.png");
+            renderer.sortingOrder = 9;
+
             MovingScript other = AllObjects[size].GetComponent<MovingScript>();
             if (other != null)
             {
@@ -79,8 +91,9 @@ public class ObjectManaging : MonoBehaviour
         }
 
         else
-        { 
-            Instantiate(first_block).name = "block_" + size;;
+        {
+            
+            Instantiate(AllObjects[0]).name = "block_" + size;;
             AllObjects.Add(GameObject.Find("block_"+ size));
             MovingScript other = AllObjects[size].GetComponent<MovingScript>();
             if (other != null)

@@ -3,8 +3,7 @@ using System.Collections;
 
 public class MovingScript : MonoBehaviour
 {
-
-    
+    bool head_open = false;
 
     int direction = 2;
     int act_direction = 2;
@@ -25,16 +24,34 @@ public class MovingScript : MonoBehaviour
 
     void oneMove()
     {
-        
+        /*
+        Vector2 buf = GameObject.Find("food").transform.position;
+        buf -= transform.position;
+        if (buf == null) buf = new Vector2(-100, -100);
+        if ((buf.x < 0.5 && buf.y < 0.5f && head_open == false) || (buf.x > -0.5f && buf.y > -0.5f && head_open == false))
+        {
+            var renderer = (SpriteRenderer)gameObject.GetComponent("SpriteRenderer");
+            renderer.sprite = Resources.LoadAssetAtPath<Sprite>("Assets/Sprites/head_open.png");
+            head_open = true;
+        }
+        else if (head_open == true)
+        {
+            var renderer = (SpriteRenderer)gameObject.GetComponent("SpriteRenderer");
+            renderer.sprite = Resources.LoadAssetAtPath<Sprite>("Assets/Sprites/head.png");
+            head_open = false;
+        }
+         */
 
-        if (direction == 1)
+        if (direction == 1)            
             transform.position = new Vector2(transform.position.x - 0.5f, transform.position.y);
+            
         else if (direction == 2)
             transform.position = new Vector2(transform.position.x + 0.5f, transform.position.y);
         else if (direction == 3)
             transform.position = new Vector2(transform.position.x, transform.position.y + 0.5f);
-        else 
+        else
             transform.position = new Vector2(transform.position.x, transform.position.y - 0.5f);
+      
         act_direction = direction;
         seconds = 0.5f;
    

@@ -7,8 +7,8 @@ public class EatScript : MonoBehaviour
     {
         Vector2 new_pos = new Vector2(Random.Range(-4, 4), Random.Range(-4, 4));
         GameObject.Find("Background").GetComponent<ObjectManaging>().
-            First_block_positions.Find(x=>x.Equals(new_pos));
-        GameObject.Find("EatManager").GetComponent<EatScriptManager>().food = 
+            First_block_positions.Find(x => x.Equals(new_pos));
+        GameObject.Find("EatManager").GetComponent<EatScriptManager>().food =
             (GameObject)Instantiate(gameObject, new_pos, Quaternion.identity);
         GameObject.Find("Background").GetComponent<ObjectManaging>().incPoints();
         Destroy(gameObject);

@@ -1,0 +1,12 @@
+C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\Temp\bin\Debug\UnityEditor.dll
+C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\Temp\bin\Debug\UnityEngine.dll
+C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\Temp\bin\Debug\Mono.Cecil.dll
+C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\Temp\bin\Debug\nunit.framework.dll
+C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\Temp\bin\Debug\Unity.DataContract.dll
+C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\obj\Debug\Assembly-CSharp.dll
+C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\obj\Debug\Assembly-CSharp.pdb
