@@ -66,6 +66,8 @@ public class ObjectManaging : MonoBehaviour
         {
             
             Application.LoadLevel("Game_over");
+            Assets.Code.Rank rank = new Assets.Code.Rank();
+            rank.addCurrent(points);
         }
         
        
@@ -79,7 +81,20 @@ public class ObjectManaging : MonoBehaviour
             Instantiate(first_block).name = "block_0";
             AllObjects.Add(GameObject.Find("block_0"));
 
-            var renderer = (SpriteRenderer)AllObjects[0].GetComponent("SpriteRenderer");
+            GameObject.Find("block").GetComponent<SpriteRenderer>().enabled = false;
+
+            MovingScript other = AllObjects[size].GetComponent<MovingScript>();
+            if (other != null)
+            {
+                Destroy(other);
+            }
+        }
+        else if (size == 1)
+        {
+            Instantiate(AllObjects[0]).name = "block_" + size; ;
+            AllObjects.Add(GameObject.Find("block_" + size));
+
+            var renderer = (SpriteRenderer)AllObjects[1].GetComponent("SpriteRenderer");
             renderer.sprite = Resources.LoadAssetAtPath<Sprite>("Assets/Sprites/snake.png");
             renderer.sortingOrder = 9;
 
@@ -89,12 +104,13 @@ public class ObjectManaging : MonoBehaviour
                 Destroy(other);
             }
         }
-
         else
         {
             
-            Instantiate(AllObjects[0]).name = "block_" + size;;
+            Instantiate(AllObjects[1]).name = "block_" + size;;
             AllObjects.Add(GameObject.Find("block_"+ size));
+
+
             MovingScript other = AllObjects[size].GetComponent<MovingScript>();
             if (other != null)
             {

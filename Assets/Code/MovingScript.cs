@@ -14,6 +14,8 @@ public class MovingScript : MonoBehaviour
 
     float seconds = 0.5f;
     public int speed = 1;
+    
+    Assets.Code.Options Opj;
 
     void MoveInDirection()
     {
@@ -81,9 +83,13 @@ public class MovingScript : MonoBehaviour
 
     void Start()
     {
-        if (GameObject.Find("SliderManager").GetComponent<GlobalSpeedSetter>() != null)
-            speed = (int)GameObject.Find("SliderManager").GetComponent<GlobalSpeedSetter>().speed;
-        else speed = 1;
+        //GlobalSpeedSetter sm = GameObject.Find("SliderManager").GetComponent<GlobalSpeedSetter>();
+        //if (sm != null)
+        //    speed = (int) sm.speed;
+        //else speed = 1;
+        Opj = new Assets.Code.Options();
+        Opj.readOptions();
+        speed = Opj.speed;
     }
     void Update()
     {

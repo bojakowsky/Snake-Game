@@ -28,5 +28,11 @@ public class GameLoad : MonoBehaviour {
     {
         Application.Quit();
     }
+
+    public void LoadRegister()
+    {
+        Application.LoadLevel("Register");
+    }
+
 	
 }

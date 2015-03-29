@@ -3,18 +3,21 @@ using System.Collections;
 using UnityEngine.UI;
 using System;
 public class GlobalSpeedSetter : MonoBehaviour {
-
-    public float speed ;
     public Text text;
+    public Assets.Code.Options Opj;
+    public Slider sld;
 	void Start () 
     {
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
+        Opj = new Assets.Code.Options();
+        Opj.readOptions();
+        text.text = Opj.speed.ToString();
+        sld.value = Opj.speed;
 	}
 	
 	public void VolumeSlider(float value)
     {
-        string buf = value.ToString();
-        text.text = value.ToString();
-        speed = Convert.ToInt32(buf);
+        int b = (int) value;
+        text.text = "" + b;
     }
 }

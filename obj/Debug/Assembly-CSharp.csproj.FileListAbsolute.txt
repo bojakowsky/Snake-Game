@@ -10,3 +10,15 @@ C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\Temp\bin\Debug\ICSharpC
 C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\obj\Debug\Assembly-CSharp.dll
 C:\Snake\C\Users\brzyd\Desktop\Unity workshop\Snake Game\obj\Debug\Assembly-CSharp.pdb
+C:\Users\ladybrz\Desktop\github_projects\snake\Snake-Game\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\ladybrz\Desktop\github_projects\snake\Snake-Game\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\ladybrz\Desktop\github_projects\snake\Snake-Game\Temp\bin\Debug\UnityEditor.dll
+C:\Users\ladybrz\Desktop\github_projects\snake\Snake-Game\Temp\bin\Debug\UnityEngine.dll
+C:\Users\ladybrz\Desktop\github_projects\snake\Snake-Game\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\ladybrz\Desktop\github_projects\snake\Snake-Game\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\ladybrz\Desktop\github_projects\snake\Snake-Game\Temp\bin\Debug\nunit.framework.dll
+C:\Users\ladybrz\Desktop\github_projects\snake\Snake-Game\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\ladybrz\Desktop\github_projects\snake\Snake-Game\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\ladybrz\Desktop\github_projects\snake\Snake-Game\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\ladybrz\Desktop\github_projects\snake\Snake-Game\obj\Debug\Assembly-CSharp.dll
+C:\Users\ladybrz\Desktop\github_projects\snake\Snake-Game\obj\Debug\Assembly-CSharp.pdb
